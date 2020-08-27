@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "PORT=9000 nodemon ./src/server.js"
+  },
+  "dependencies": {
+    "express": "~4.16.1",
+    "socket.io": "~2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "~2.0.4",
+    "prettier": "~2.0.5"
+  }
+}
