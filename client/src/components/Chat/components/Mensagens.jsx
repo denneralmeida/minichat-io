@@ -7,11 +7,11 @@ import ScrollToBottom from 'react-scroll-to-bottom';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    minHeight: '90%',
     backgroundColor: theme.palette.grey[300],
     display: 'flex',
     flexDirection: 'column',
     flexGrow: 1,
+    overflow: 'auto',
   },
   flexEnd: {
     justifyContent: 'flex-end',

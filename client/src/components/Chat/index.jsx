@@ -7,7 +7,7 @@ import { Redirect } from 'react-router';
 import io from 'socket.io-client';
 import { useSnackbar } from 'notistack';
 
-const SOCKET_SERVER = 'http://192.168.15.5:9000';
+const SOCKET_SERVER = 'http://localhost:9000';
 
 const useStyles = makeStyles({
   boxHeight: {
@@ -106,7 +106,7 @@ const Chat = ({ location, history }) => {
   return !state?.nome || !state?.sala ? (
     <Redirect to={paths.HOME} />
   ) : socketIO ? (
-    <Box height="100%">
+    <Box height="100vh">
       <Menu nome={state.nome} handleSideNav={handleSideNav} handleExit={handleExit} />
       <Box display="flex" className={classes.boxHeight}>
         <UsuariosAtivos
